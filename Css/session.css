@@ -1,0 +1,150 @@
+.box_session{
+    width: 450px;
+    height: auto;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.096);
+    padding: 10px 25px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center ;
+    flex-direction: column;
+}
+
+.circle{
+    border-radius: 50%;
+    border: 3px solid black;
+    width: 116px !important;
+    height: 116px !important;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 15px 0 15px 0;
+    user-select: none;
+}
+.user__login{
+    padding: 0px;
+    width: 83px;
+}
+
+.box_session div{
+    width: 100%;
+}
+
+
+/* INPUT */
+
+.field {
+    margin-top: 20px;
+    display: flex;
+    flex-flow: column-reverse;
+    margin-bottom: 1em;
+    
+  }
+  
+  label, input {
+    transition: all 0.2s;
+    touch-action: manipulation;
+  }
+  
+  input {
+    font-size: 1.5em;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    font-family: inherit;
+    -webkit-appearance: none;
+    border-radius: 0;
+    padding: 0;
+    cursor: text;
+    font-size: 18px;
+  }
+  
+  input:focus {
+    outline: 0;
+    border-bottom: 1px solid #666;
+  }
+  
+  label {
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 13px;
+    margin-bottom: 16px;
+    user-select: none;
+  }
+  
+  input:placeholder-shown + label {
+    cursor: text;
+    max-width: 66.66%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transform-origin: left bottom;
+    transform: translate(0, 2.125rem) scale(1.5);
+  }
+  
+  
+  ::-webkit-input-placeholder {
+    opacity: 0;
+    transition: inherit;
+  }
+  
+  
+  input:focus::-webkit-input-placeholder {
+    opacity: 1;
+  }
+  
+  
+  input:not(:placeholder-shown) + label,
+  input:focus + label {
+    transform: translate(0, 0) scale(1);
+    cursor: pointer;
+  }
+  
+  /* boton 1 */
+  .btn__1{
+    background-color: royalblue;
+    color: white;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 2px;
+    margin: 15px 0px 12px 0;
+    cursor: pointer;
+    user-select: none;
+}
+
+  .btn__1:hover{
+    background-color: rgb(75, 119, 250);
+  }
+
+  .btn__1:active{
+    background-color: rgb(52, 82, 172);
+  }
+
+  p{
+      color: red;
+      display: none;
+  }
+
+
+  .loggeding{
+    color: green;
+    display: block;
+  }
+  
+  @media (max-width: 470px) {
+   .box_session{
+    width: 380px;
+   }
+}
+
+@media (max-width: 400px) {
+    .box_session{
+     width: 300px;
+    }
+    label{
+        font-size: 10px;
+    }
+ }
+ 

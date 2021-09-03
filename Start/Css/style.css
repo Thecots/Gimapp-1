@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif ;
+}
+
+/* BARRA SCROLL*/
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #e6e6e6; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(44, 44, 44); 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(59, 59, 59); 
+}
+
+.body{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../../img/start_background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -2;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.body::after{
+    content: ".";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    background-color: #4169e1bf; /* #830ebfbf */
+    color: transparent;
+}
+
+header{
+    width: 100%;
+    height: 50px ;
+    position: fixed !important;
+    z-index: 5;
+    display: flex !important;
+    justify-content: flex-end !important;
+    flex-direction: row !important;
+    padding: 0 5% !important;
+    align-items: center !important;
+    user-select: none;
+    background-color: transparent !important;
+}
+
+header a{
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0 5px;
+}
+
+header a:hover{
+    border-bottom: 1px solid white;
+}
+
+header a:active{
+    color: rgb(231, 231, 231);
+}
+
+.box {
+    width: 505px;
+    height: auto;
+    background-color: rgba(39, 39, 39, 0.411);
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    user-select: none;
+    color: white;
+    transform: scale(1.7);
+}
+
+.aplicacion{
+    font-size: 51px;
+    font-weight: 200;
+    width: 467px;}
+
+.workots{
+    font-size: 84px;
+    font-weight: 700;
+    width: 467px;
+}
+
+.nombre{
+    width: 100%;
+    height: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linea{
+    width: 174px;
+    height: 1px;
+    background-color: white;
+}
+
+.david{
+    margin: 0 20px;
+}
+
+/* MediaQuery */
+@media (max-width: 900px) {
+    .box{
+        transform: scale(1.4);
+    }
+}
+
+@media (max-width: 750px) {
+    .box{
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 550px) {
+    .box{
+        transform: scale(0.7);
+    }
+    .linea{
+        width: 168px;
+    }
+}

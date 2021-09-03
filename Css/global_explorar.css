@@ -1,0 +1,30 @@
+
+.template{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.template_header{
+    width: 100%;
+    height: auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid black;
+    margin-bottom: 25px;
+}
+.template_header h1{
+    font-weight: 400;
+    font-size: 35px;
+    display: flex;
+}
+.template_header .t__img{
+    margin-left: 5px 0;
+}
+
+.template_header img{
+    width: 40px;
+    cursor: pointer;
+}
+

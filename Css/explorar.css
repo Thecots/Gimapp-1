@@ -1,0 +1,119 @@
+
+.t__box{
+    width: 100%;
+    height: 80px;
+    border-radius: 10px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.5s;
+    position: relative;
+    padding: 0 15px;
+}
+.t__box:hover{
+    transform: scale(1.006);
+}
+
+.t__box h1{
+    font-weight: 400;
+    font-size: 35px;
+    color: white;
+    z-index: 15;
+}
+
+.t__rutinas{
+    background-image: url("../img/rutina1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.t__rutinas::after{
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.350);
+    z-index: 4;
+    position: absolute;
+    border-radius: 10px;
+    transition: all 0.5s;
+
+}
+.t__rutinas:hover::after{
+    background-color: rgba(0, 0, 0, 0.052);
+
+}
+
+
+.t__ejercicios{
+    background-image: url("../img/rutina2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.t__ejercicios::after{
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.350);
+    z-index: 4;
+    position: absolute;
+    border-radius: 10px;
+    transition: all 0.5s;
+
+}
+.t__ejercicios:hover::after{
+    background-color: rgba(0, 0, 0, 0.052);
+
+}
+
+.t__musculos{
+    background-image: url("../img/rutina3.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.t__musculos::after{
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.350);
+    z-index: 4;
+    position: absolute;
+    border-radius: 10px;
+    transition: all 0.5s;
+
+}
+.t__musculos:hover::after{
+    background-color: rgba(0, 0, 0, 0.052);
+
+}
+
+.t__material{
+    background-image: url("../img/rutina4.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.t__material::after{
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.350);
+    z-index: 4;
+    position: absolute;
+    border-radius: 10px;
+    transition: all 0.5s;
+
+}
+.t__material:hover::after{
+    background-color: rgba(0, 0, 0, 0.052);
+
+}
+

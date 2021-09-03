@@ -1,0 +1,120 @@
+/* GESTIÓN DE ENTRENO */
+
+
+· Objetivo ·
+Crear una applicación para gestiónar los entrenos.
+Dicha applicación se podrán crear series, rutinas, vídeos de rutinas...
+Está aplicacion tendrá un calendario para apuntar el recorrido de los entrenos.
+
+· Contenido ·
+    -> Usuarios
+    -> series
+    -> Rutinas
+    -> Vídeos
+    -> Calendario
+
+· Servidor ·
+El servidor contendra la siguiente información:
+    -> Imagenes de los Entrenamiento
+    -> Vídeos de rutinas
+
+· Base de datos ·
+La base de datos contendra lo siguiente:
+    
+    //Tabla de usuarios, aquí se almacenaran los usuarios.
+    -> tb_users
+        · id_user
+        · username
+        · passwd
+    
+    /* Tablas Unicas */
+
+    // Tabla de musuclos, aquí se almacenaran todos los musculos del cuerpo. 
+    -> tb_musculos
+        · id_musculo
+        · musculo
+        · tren
+
+    //Tabla de imganes de los musculos, aquí se encontrarn imagenes de cada musculo para orientarse mejór.
+    -> tb_musculos_img
+        · id_musculo_img
+        · id_musculo
+        · musculo_img
+
+    //Tabla de series musculos, está tabla almacenara la informacion de cuantos musculos se ejercitan al hacer X serie.
+    -> tb_serie_musculos
+        · id_serie_musculo
+        · id_serie
+        · id_musculo
+
+    //Tabla de series, aquí se almacenaran todas las series.
+    -> tb_series
+        · id_serie
+        · serie
+        · descripcion_serie
+    //Tabla series img, aquí se almacenaran todas las imagenes de cada serie.
+    -> tb_series_img
+        · id_serie_img
+        · id_serie
+        · serie_img
+
+    //Tabla series videos, aquí se almacenaran videos explicando la serie.
+    -> tb_series_videos
+        · id_video_serie
+        · id_serie
+        · serie_video
+
+    //Tabla repeticiones, aquí se almacenaran las repeticiones aconsejadas para cada rutina.
+    -> tb_repeticiones
+        · id_repeticiones
+        · id_serie
+        · repeticiones_aconsejadas
+    
+    //Tabla rutinas, aquí se almacenara la rutina.
+    -> tb_rutinas
+        · id_rutina
+        · ip_rutina
+        · rutina
+        · descipcion_rutina
+        * (ip_rutina == 0) = rutina echa por el usuario. (ip_rutina == 1) = rutina en vídeo.
+
+    //Tabla rutinas series, aquí se almacenaran las series de cada rutina.
+    -> tb_rutinas_series
+        · id_rutina
+        · id_serie
+
+    //Tabla rutina img, aquí se almacenaran las miniaturas de las rutinas.
+    -> tb_rutinas_img
+        · id_rutina_img
+        · id_rutina
+        · rutina_img
+
+    //Tabla rutinas videos, aquí se almacenaran los videos de las rutinas
+    ->tb_rutinas_videos
+        · id_video_rutina
+        · id_rutina
+        · rutina_video
+    
+    /* Calendario */
+    //Tabla entrenamientos dia, en esta tabla se almacenaran los días en los que se hayan entrenado.
+    ->tb_entrenamientos_dia
+        · id_entrenamiento
+        · id_usuario
+        · fecha_entrenamiento
+    
+    //Tabla rutinas entrenamiento día, aquí se almacenaran las rutinas que se han echo en X día
+    ->tb_rutinas_entrenamiento_dia
+        · id_rutinas_entrenamiento_dia
+        · id_entrenamiento_dia
+        · id_rutina
+        · descripcion_rutina_entrenamiento
+
+· Músculos ·
+    -Tren superior
+    
+    -Tren inferior
+        · Gemelo
+        · Cuadricep
+        · Glúteos
+        ·
+        ·

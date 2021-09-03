@@ -1,0 +1,146 @@
+
+
+.tren{
+    width: 100%;
+    height: auto;
+    padding: 0 15px;
+    margin: 10px 0;
+    background-color: royalblue;
+    color: white;
+    border-radius: 10px;
+    user-select: none;
+    border: 2px solid transparent;
+
+    display: flex;
+    flex-direction: column;
+}
+.tren:hover{
+    border: 2px solid rgba(0, 0, 0, 0.425);
+}
+
+
+.tren_top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+
+}
+.tren_top div{
+    display: flex;
+    align-items: center
+}
+
+.tren .tren_top .m__img_top{
+    width: 65px;
+    margin: 2px 10px;
+}
+.tren .tren_top h1{
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.m__down{
+    width: 35px;
+}
+
+.tren-bottom{
+    width: 100%;
+    height: auto;
+    display: none;
+    margin-bottom: 10px;
+    flex-direction: column;
+    margin-top: 10px;
+}
+/* lista */
+
+.tren_div{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    display: flex;
+    padding: 0 10px;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: 0.5s transform;
+    border: 2px solid rgba(0, 0, 0, 0);
+
+}
+
+.tren_div:hover{
+    transform: scale(1.008);
+    border: 2px solid black;
+}
+.tren_div .m__img_bottom{
+    display: flex;
+    align-items: center;
+}
+
+.tren_div .m__img_bottom img{
+    width:55px;
+    margin: 5px 10px 5px 0;
+}
+
+.tren_div .m__img_bottom p{
+    font-size: 30px;
+}
+
+.tren_div .m__info{
+    width: 50px; /* Cambiar imagen*/
+}
+
+
+@media (max-width: 525px) {
+    .tren{
+        padding: 0 5px;
+
+    }
+    .tren .tren_top h1{
+        font-size: 30px;
+    }
+    .tren .tren_top .m__img_top{
+        width: 55px;
+        margin: 2px 5px;
+    }
+    .tren .m__down{
+        width: 25px;
+    }
+ }
+ 
+ @media (max-width: 560px) {
+    .tren_div .m__img_bottom p {
+        font-size: 25px;
+    }
+    .tren_div .m__img_bottom img {
+        width: 45px;
+    }
+    .tren_div .m__info {
+        width: 40px;
+    }
+ }
+
+ @media (max-width: 410px) {
+    .tren{
+        padding: 0 5px;
+
+    }
+    .tren .tren_top h1{
+        font-size: 25px;
+    }
+    .tren .tren_top .m__img_top{
+        width: 45px;
+        margin: 2px 5px;
+    }
+    .tren .m__down{
+        width: 15px;
+    }
+    .tren_div .m__img_bottom p {
+        font-size: 20px;
+    }
+ }
+ 
